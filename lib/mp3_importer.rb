@@ -10,7 +10,7 @@ class MP3Importer
     @files ||= Dir.entries(@path).select {|song| !File.directory?(song) && song.end_with?(".mp3")} #normalizes the filename to just the mp3 filename with no path
   end
 
-  def import
+  def import #imports the files into the library by creating songs from a filename
     files.each {|song| Song.new_by_filename(song)}
   end
 
