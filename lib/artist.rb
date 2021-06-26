@@ -29,7 +29,7 @@ class Artist
       #finds or creates an artist by name maintaining uniqueness of objects by name property
      if found_artist
         found_artist
-      else
+      else #Creates new instance of Artist if none exist
         new_artist = self.new(artist_name)
         new_artist.save
         new_artist
