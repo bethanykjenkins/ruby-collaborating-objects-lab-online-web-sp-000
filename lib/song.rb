@@ -16,7 +16,7 @@ class Song
     song = file_name.split(" - ")[1]
     artist = file_name.split(" - ")[0]
     new_song = self.new(song)
-    new_song.artist_name = artist
+    new_song.artist_name = artist #associates new song instance with the artist from the filename
     new_song
   end
 
