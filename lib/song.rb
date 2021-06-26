@@ -8,7 +8,7 @@ class Song
     @@all << self
   end
 
-  def self.all
+  def self.all #returns all existing Song instances
     @@all
   end
   
