@@ -20,7 +20,7 @@ class Artist
       song.artist = self
     end
     
-    def songs 
+    def songs # lists all songs that belong to this artist
       Song.all.select {|song| song.artist == self}
     end
     
