@@ -20,7 +20,7 @@ class Song
     new_song
   end
 
-  def artist_name=(name)
+  def artist_name=(name) #accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute
     self.artist = Artist.find_or_create_by_name(name)
     artist.add_song(self)
   end
