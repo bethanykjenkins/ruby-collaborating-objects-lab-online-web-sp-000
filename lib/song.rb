@@ -3,7 +3,7 @@ class Song
 
   @@all = []
 
-  def initialize(name)
+  def initialize(name) # accepts a name for the song and makes it accessible through an attribute accessor
     @name = name
     @@all << self
   end
