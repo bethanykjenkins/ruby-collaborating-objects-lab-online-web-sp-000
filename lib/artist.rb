@@ -8,7 +8,7 @@ class Artist
       @@all << self
     end
     
-    def self.all
+    def self.all #returns all existing Artist instances
       @@all
     end
     
